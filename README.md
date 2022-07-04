@@ -8,7 +8,7 @@
 
 3.HCSR-04 Ultrasonic sensor
 
-4.ESP8266 Wifi module
+4.Esp8266-01 wifi module
 
 **Technology Stack**
 
