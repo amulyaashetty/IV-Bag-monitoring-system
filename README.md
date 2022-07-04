@@ -6,7 +6,7 @@
 
 2.Light dependent resistor(LDR)
 
-3.Ultrasonic sensor
+3.HCSR-04 Ultrasonic sensor
 
 4.ESP8266 Wifi module
 
