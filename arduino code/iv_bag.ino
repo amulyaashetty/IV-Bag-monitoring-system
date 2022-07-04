@@ -10,7 +10,7 @@
 #define RX 2
 #define TX 3
 #define echoPin 4                                  // connect pin D4 Arduino to pin Echo of ultrasonic sensor
-#define trigPin 5                                  //connect pin D5 Arduino to pin Trig of ultrasonic
+#define trigPin 5                                  //connect pin D5 Arduino to pin Trig of ultrasonic sensor
 long duration;                                     // variable for the duration of sound wave travel
 int distance;                                      // variable for the distance measurement
 int sensorPin = A0;                                // select the input pin for LDr sensor
@@ -18,7 +18,7 @@ int sensorValue = 0;                               // variable to store the valu
 
 String AP = "WIFI_NAME";                           // AP NAME (NAME OF THE WIFI)
 String PASS = "PASSWORD";                          // AP PASSWORD( WIFI PASSWORD
-String API = "API KEY";                   // Write API KEY OF FIREBASE WEBSITE
+String API = "API KEY";                   // Write API KEY OF THINGSPEAK WEBSITE
 String HOST = "api.thingspeak.com";
 String PORT = "80";
 String field1 = "field1";
