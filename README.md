@@ -10,5 +10,10 @@
 
 4.ESP8266 Wifi module
 
+**Technology Stack**
+
+ - Internet of Things
+ - Thingspeak
+
 (project not yet completed)
 
