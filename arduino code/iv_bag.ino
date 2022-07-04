@@ -1,11 +1,11 @@
+//install the necessary libraries
 #include <SoftwareSerial.h>
 #include <ESP8266WiFi.h>       
 
 #include <ESP8266WebServer.h> 
 
-#include <LiquidCrystal_I2C.h>
 
-LiquidCrystal_I2C lcd(0x27,20,4);
+
   
 #define RX 2
 #define TX 3
@@ -54,8 +54,7 @@ void loop()
  
  esp8266.println(getData);delay(1500);countTrueCommand++;
  sendCommand("AT+CIPCLOSE=0",5,"OK");
-  lcd.print("Distance :- ");
-  lcd.print(values1);
+  
 }
 
 String getSensor1Data(){
