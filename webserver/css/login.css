@@ -1,0 +1,44 @@
+html {
+	height: 100%;
+}
+body{
+	/* background-color: #60dfcd;
+	background-image: linear-gradient(315deg, #60dfcd 0%, #1e9afe 74%); */
+	  background-color: #25CABF;
+	/* min-height: 100vh; */
+}
+
+ #logo {
+	 display: block;
+	 margin: 15vh auto 2vh auto;
+ }
+
+ #logoContainer h1 {
+ 	text-align: center;
+	font-family: 'Roboto', sans-serif;
+ }
+
+ #formDiv {
+	 	margin: 5vh auto 0 auto;
+		max-width: 600px;
+ }
+
+ #loginBt {
+	 background-color: #f3cd4c;
+	 border-color: #f3cd4c;
+	 color: #000;
+ }
+.form-control:focus {
+	border-color: #000;
+	box-shadow: none;
+}
+#status {
+	text-transform: uppercase;
+	margin-top: 2vh;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.5);
+  border: none;
+  visibility: hidden;
+}

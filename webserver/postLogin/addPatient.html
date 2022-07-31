@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/addPatient.css">
+
+    <title>SMART IV</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="options.html">HOME</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">CREATE ENTRY <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="showEntry.html">SHOW STATUS</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="removePatient.html">DELETE ENTRY</a>
+        </li>
+      </ul>
+      <form class="form-inline">
+        <button class="btn btn-light" type="button" id="logout">SIGN OUT</button>
+      </form>
+      </div>
+    </nav>
+
+    <div id="logoContainer" class="container">
+      <img id="logo" src="../img/logo_round.png">
+    </div>
+
+
+    <div class="container">
+      <form id="addPatientForm">
+        <div class="form-row">
+          <div class=" col-md-6 form-group">
+            <label>Patient Name</label>
+            <input type="name" class="form-control" id="inputName" placeholder="Enter Name">
+          </div>
+          <div class=" col-md-3 form-group">
+            <label>Age</label>
+            <input type="number" class="form-control" id="inputAge" placeholder="Enter Age">
+          </div>
+          <div class="col-md-3 form-group">
+            <label>Gender</label>
+            <input type="text" class="form-control" id="inputGender" placeholder="Specify Gender">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-10 form-group">
+            <label>Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Enter Address">
+          </div>
+          <div class="col-md-2 form-group">
+            <label>Blood Group</label>
+            <input type="text" class="form-control" id="inputBloodGroup" placeholder="Enter Blood Group">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 form-group">
+            <label>Mobile Number</label>
+            <input type="tel" class="form-control" id="inputNumber" placeholder="Enter Mobile Number">
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Emergency Mobile Number</label>
+            <input type="tel" class="form-control" id="inputEmergencyNumber" placeholder="Enter Mobile Number">
+          </div>
+        </div>
+        
+       
+        <div class="form-row">
+          <div class="col-md-6 form-group">
+            <label>Room Number</label>
+            <input type="number" class="form-control" id="inputRoomNumber" placeholder="Enter Room Number">
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Bed Number</label>
+            <input type="number" class="form-control" id="inputBedNumber" placeholder="Enter Bed Number">
+          </div>
+        </div>
+        <button type="button" id="submit" class="btn btn-primary">Submit</button>
+        <div id="status" class="alert alert-primary" role="alert"></div>
+      </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+    <script src="../js/config.js"></script>
+    <script src="../js/add-patient.js"></script>
+    <script type="text/javascript" src="../js/log-out.js"></script>
+  </body>

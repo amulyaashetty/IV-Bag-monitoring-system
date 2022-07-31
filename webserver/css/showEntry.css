@@ -1,0 +1,70 @@
+html {
+	height: 100%;
+}
+body {
+  background-color: #fec84e;
+  background-image: linear-gradient(315deg, #fec84e 0%, #ffdea8 74%);
+  /* background-color: #25CABF; */
+}
+#show {
+  /* margin-top: 10vh; */
+}
+
+.patBox {
+display: flex;
+margin: 2vh auto;
+background-color: rgba(255,255,255,0.2);
+padding: 15px;
+}
+
+.flex {
+  display: flex;
+}
+.flex div {
+  margin: 0 15px;
+}
+.dripImage {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  margin: auto;
+  width: 50px;
+  vertical-align: middle;
+
+}
+
+.dripClass {
+min-height: 80px;
+}
+
+#logo {
+  display: block;
+  margin: 3vh auto 5vh auto;
+  max-width: 150px;
+}
+
+#logoContainer h1 {
+ text-align: center;
+ font-family: 'Roboto', sans-serif;
+}
+#logoContainer {
+ margin: 2vh auto;
+}
+
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.nav-item a {
+  font-weight: 500;
+}
+
+.form-inline {
+	margin-bottom: 0;
+}
+
+.form-inline button{
+	font-weight: 500;
+}
