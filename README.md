@@ -17,6 +17,9 @@ An IoT based automatic alerting device that consists of  Light Dependent Resisto
  - Internet of Things
  - Thingspeak
  - Firebase
+ 
+ **Contributors**
+ * [Niharika C](https://github.com/Niharika10C)
 
 
 
